@@ -13,7 +13,7 @@ public class BinarioVentana {
         convertirButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null,"El numero decimal dado, en binario es "+textArea1.getText());
+                JOptionPane.showMessageDialog(null,"El numero decimal dado, en binario es "+ (pila.convertirBinario(Integer.parseInt(numeroingresado.getText())))+ textArea1.getText());
                 textArea1.setText(pila.convertirBinario(Integer.parseInt(numeroingresado.getText())));
                 numeroingresado.setText("");
             }
